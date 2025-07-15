@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02932E26DA670024B1EF /* InsureWalletApp.swift */; };
+		67DB02962E26DA670024B1EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02952E26DA670024B1EF /* ContentView.swift */; };
+		67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB02972E26DA680024B1EF /* Assets.xcassets */; };
+		67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */; };
+		67DB02A52E26DA680024B1EF /* InsureWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */; };
+		67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */; };
+		67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67DB02A12E26DA680024B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DB02882E26DA670024B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67DB028F2E26DA670024B1EF;
+			remoteInfo = InsureWallet;
+		};
+		67DB02AB2E26DA680024B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DB02882E26DA670024B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67DB028F2E26DA670024B1EF;
+			remoteInfo = InsureWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67DB02902E26DA670024B1EF /* InsureWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsureWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02932E26DA670024B1EF /* InsureWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletApp.swift; sourceTree = "<group>"; };
+		67DB02952E26DA670024B1EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67DB02972E26DA680024B1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsureWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletTests.swift; sourceTree = "<group>"; };
+		67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsureWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITests.swift; sourceTree = "<group>"; };
+		67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67DB028D2E26DA670024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029D2E26DA680024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A72E26DA680024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67DB02872E26DA670024B1EF = {
+			isa = PBXGroup;
+			children = (
+				67DB02922E26DA670024B1EF /* InsureWallet */,
+				67DB02A32E26DA680024B1EF /* InsureWalletTests */,
+				67DB02AD2E26DA680024B1EF /* InsureWalletUITests */,
+				67DB02912E26DA670024B1EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67DB02912E26DA670024B1EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02902E26DA670024B1EF /* InsureWallet.app */,
+				67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */,
+				67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67DB02922E26DA670024B1EF /* InsureWallet */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02932E26DA670024B1EF /* InsureWalletApp.swift */,
+				67DB02952E26DA670024B1EF /* ContentView.swift */,
+				67DB02972E26DA680024B1EF /* Assets.xcassets */,
+				67DB02992E26DA680024B1EF /* Preview Content */,
+			);
+			path = InsureWallet;
+			sourceTree = "<group>";
+		};
+		67DB02992E26DA680024B1EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67DB02A32E26DA680024B1EF /* InsureWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */,
+			);
+			path = InsureWalletTests;
+			sourceTree = "<group>";
+		};
+		67DB02AD2E26DA680024B1EF /* InsureWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */,
+				67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */,
+			);
+			path = InsureWalletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67DB028F2E26DA670024B1EF /* InsureWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02B42E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWallet" */;
+			buildPhases = (
+				67DB028C2E26DA670024B1EF /* Sources */,
+				67DB028D2E26DA670024B1EF /* Frameworks */,
+				67DB028E2E26DA670024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InsureWallet;
+			productName = InsureWallet;
+			productReference = 67DB02902E26DA670024B1EF /* InsureWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67DB029F2E26DA680024B1EF /* InsureWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02B72E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletTests" */;
+			buildPhases = (
+				67DB029C2E26DA680024B1EF /* Sources */,
+				67DB029D2E26DA680024B1EF /* Frameworks */,
+				67DB029E2E26DA680024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DB02A22E26DA680024B1EF /* PBXTargetDependency */,
+			);
+			name = InsureWalletTests;
+			productName = InsureWalletTests;
+			productReference = 67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67DB02A92E26DA680024B1EF /* InsureWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02BA2E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletUITests" */;
+			buildPhases = (
+				67DB02A62E26DA680024B1EF /* Sources */,
+				67DB02A72E26DA680024B1EF /* Frameworks */,
+				67DB02A82E26DA680024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DB02AC2E26DA680024B1EF /* PBXTargetDependency */,
+			);
+			name = InsureWalletUITests;
+			productName = InsureWalletUITests;
+			productReference = 67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67DB02882E26DA670024B1EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					67DB028F2E26DA670024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					67DB029F2E26DA680024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67DB028F2E26DA670024B1EF;
+					};
+					67DB02A92E26DA680024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67DB028F2E26DA670024B1EF;
+					};
+				};
+			};
+			buildConfigurationList = 67DB028B2E26DA670024B1EF /* Build configuration list for PBXProject "InsureWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67DB02872E26DA670024B1EF;
+			productRefGroup = 67DB02912E26DA670024B1EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67DB028F2E26DA670024B1EF /* InsureWallet */,
+				67DB029F2E26DA680024B1EF /* InsureWalletTests */,
+				67DB02A92E26DA680024B1EF /* InsureWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67DB028E2E26DA670024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */,
+				67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029E2E26DA680024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A82E26DA680024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67DB028C2E26DA670024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DB02962E26DA670024B1EF /* ContentView.swift in Sources */,
+				67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029C2E26DA680024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DB02A52E26DA680024B1EF /* InsureWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A62E26DA680024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */,
+				67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67DB02A22E26DA680024B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67DB028F2E26DA670024B1EF /* InsureWallet */;
+			targetProxy = 67DB02A12E26DA680024B1EF /* PBXContainerItemProxy */;
+		};
+		67DB02AC2E26DA680024B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67DB028F2E26DA670024B1EF /* InsureWallet */;
+			targetProxy = 67DB02AB2E26DA680024B1EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67DB02B22E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67DB02B32E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67DB02B52E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67DB02B62E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67DB02B82E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsureWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InsureWallet";
+			};
+			name = Debug;
+		};
+		67DB02B92E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsureWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InsureWallet";
+			};
+			name = Release;
+		};
+		67DB02BB2E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsureWallet;
+			};
+			name = Debug;
+		};
+		67DB02BC2E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsureWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67DB028B2E26DA670024B1EF /* Build configuration list for PBXProject "InsureWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B22E26DA680024B1EF /* Debug */,
+				67DB02B32E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02B42E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B52E26DA680024B1EF /* Debug */,
+				67DB02B62E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02B72E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B82E26DA680024B1EF /* Debug */,
+				67DB02B92E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02BA2E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02BB2E26DA680024B1EF /* Debug */,
+				67DB02BC2E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67DB02882E26DA670024B1EF /* Project object */;
+}
