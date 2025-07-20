@@ -91,7 +91,7 @@ struct LoginView: View {
             }
             .padding(.horizontal, 24)
             .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
-                HomeView()
+                InsurancePolicyView()
             }
             .background(.white)
             .ignoresSafeArea(.keyboard, edges: .bottom)
