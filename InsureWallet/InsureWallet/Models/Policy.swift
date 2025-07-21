@@ -9,8 +9,9 @@ import Foundation
 
 struct Policy: Identifiable, Decodable {
     let id: String
-    let title: String
-    let subtitle: String
+    let name: String
+    let insurarLogo: String
+    let policytype: String
     let provider: String
     let policyNumber: String
     let coveredUntil: String

@@ -14,12 +14,12 @@ struct LoginView: View {
     @State private var showPassword = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 24) {
                 Spacer(minLength: 50)
                 
                 //Logo
-               Image("ScottishWidows")
+               Image("scottishwidows")
                     .resizable()
                     .frame(width: 100, height: 100)
                     .padding()
@@ -69,18 +69,8 @@ struct LoginView: View {
                 .foregroundColor(.red)
                 .font(.footnote)
                 
-                //Login Button
-                Button(action: {
-                    viewModel.login()
-                }) {
-                    Text("Log in")
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(.red)
-                        .cornerRadius(25)
-                }
-                .padding(.top)
+                // MARK: Login Button
+                loginButton()
                 NavigationLink(destination: HomeView()) {
                     Text("Register")
                         .foregroundColor(.red)
@@ -89,12 +79,28 @@ struct LoginView: View {
                 Spacer()
             }
             .padding(.horizontal, 24)
-            .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
+            .navigationDestination(isPresented: $viewModel.isLoggedIn,
+                                   destination: {
                 PolicyListView()
-            }
+            })
             .background(.white)
             .ignoresSafeArea(.keyboard, edges: .bottom)
         }
+        .navigationBarBackButtonHidden(true)
+    }
+    
+    private func loginButton() -> some View {
+        Button(action: {
+            viewModel.login()
+        }) {
+            Text("Log in")
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(.red)
+                .cornerRadius(25)
+        }
+        .padding(.top)
     }
 }
 
