@@ -56,7 +56,6 @@ struct LoginView: View {
                     }
                 }
                
-                
                 if let error = viewModel.errorMessage {
                     Text(error)
                         .foregroundColor(.red)
@@ -91,7 +90,7 @@ struct LoginView: View {
             }
             .padding(.horizontal, 24)
             .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
-                InsurancePolicyView()
+                PolicyListView()
             }
             .background(.white)
             .ignoresSafeArea(.keyboard, edges: .bottom)
