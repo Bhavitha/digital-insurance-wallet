@@ -14,23 +14,21 @@ struct PolicyCardView: View {
     let policy: Policy
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(spacing: 6) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(policy.title)
+                    Text(policy.name)
                         .font(.headline)
                         .foregroundColor(.primary)
-                    Text(policy.subtitle)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
                     Text(policy.provider)
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
+                .padding(.bottom)
                 
                 Spacer()
                 
-                Image(systemName: "shield.checkerboard")
+                Image(systemName: policy.insurarLogo)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
@@ -60,21 +58,33 @@ struct PolicyCardView: View {
                         .fontWeight(.medium)
                 }
             }
+            .padding(.top)
             
-            // Bottom: Add to Wallet Button
-            Button(action: {
-                WalletManager.shared.presentWalletPass()
-            }) {
-                HStack {
-                    Image(systemName: "wallet.pass")
-                    Text("Add to Wallet")
-                        .fontWeight(.semibold)
-                }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.blue.opacity(0.1))
-                .foregroundColor(.blue)
-                .cornerRadius(10)
+            // MARK: Add to Apple Wallet Button
+            HStack {
+                Button(action: {
+                    print("Add to apple wallet button clicked..")
+                    WalletManager.shared.presentWalletPass()
+                }, label: {
+                    HStack(spacing: 10) {
+                        Image("applewallet", bundle: nil)
+                        VStack(alignment: .leading) {
+                            Text("Add to")
+                                .font(.subheadline)
+                            Text("Apple Wallet")
+                                .font(.subheadline)
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 8)
+                    .foregroundColor(.white)
+                })
+                .background(Color.black)
+                .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 10,
+                                                                   bottomLeading: 10,
+                                                                   bottomTrailing: 10,
+                                                                   topTrailing: 10)))
+                .padding(.top, 10)
             }
         }
         .padding()
