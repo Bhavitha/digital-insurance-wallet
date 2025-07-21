@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import PassKit
 
 struct PolicyCardView: View {
+    
+    @State private var showWalletSheet = false
     let policy: Policy
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            // Top: Title and Logo
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(policy.title)
@@ -25,19 +27,18 @@ struct PolicyCardView: View {
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
-
+                
                 Spacer()
-
+                
                 Image(systemName: "shield.checkerboard")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.red)
             }
-
+            
             Divider()
-
-            // Middle: Policy details
+            
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Policy number")
@@ -47,9 +48,9 @@ struct PolicyCardView: View {
                         .font(.body)
                         .fontWeight(.medium)
                 }
-
+                
                 Spacer()
-
+                
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Covered until")
                         .font(.caption)
@@ -59,10 +60,10 @@ struct PolicyCardView: View {
                         .fontWeight(.medium)
                 }
             }
-
+            
             // Bottom: Add to Wallet Button
             Button(action: {
-                // TODO: Add to Wallet logic here
+                WalletManager.shared.presentWalletPass()
             }) {
                 HStack {
                     Image(systemName: "wallet.pass")
