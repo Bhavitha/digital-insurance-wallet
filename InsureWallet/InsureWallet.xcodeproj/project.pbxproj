@@ -18,7 +18,7 @@
 		677112342E2E997F00B6FEEA /* PolicyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112332E2E997F00B6FEEA /* PolicyService.swift */; };
 		677112362E2E99B300B6FEEA /* PolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112352E2E99B300B6FEEA /* PolicyViewModel.swift */; };
 		677112382E2E99E600B6FEEA /* PolicyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112372E2E99E600B6FEEA /* PolicyListView.swift */; };
-		6771123C2E2EAF5B00B6FEEA /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6771123B2E2EAF5B00B6FEEA /* WalletManager.swift */; };
+		6771123C2E2EAF5B00B6FEEA /* PassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6771123B2E2EAF5B00B6FEEA /* PassService.swift */; };
 		6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6771123A2E2EADF700B6FEEA /* pass.pkpass */; };
 		677112472E2F60A100B6FEEA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 677112462E2F60A100B6FEEA /* FirebaseAuth */; };
 		677112492E2F60A100B6FEEA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 677112482E2F60A100B6FEEA /* FirebaseCore */; };
@@ -65,7 +65,7 @@
 		677112352E2E99B300B6FEEA /* PolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModel.swift; sourceTree = "<group>"; };
 		677112372E2E99E600B6FEEA /* PolicyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyListView.swift; sourceTree = "<group>"; };
 		6771123A2E2EADF700B6FEEA /* pass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass.pkpass; sourceTree = "<group>"; };
-		6771123B2E2EAF5B00B6FEEA /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		6771123B2E2EAF5B00B6FEEA /* PassService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassService.swift; sourceTree = "<group>"; };
 		67DB02902E26DA670024B1EF /* InsureWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsureWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB02932E26DA670024B1EF /* InsureWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletApp.swift; sourceTree = "<group>"; };
 		67DB02972E26DA680024B1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 			children = (
 				6718A7B82E2AF85D0012D1FA /* AuthService.swift */,
 				677112332E2E997F00B6FEEA /* PolicyService.swift */,
-				6771123B2E2EAF5B00B6FEEA /* WalletManager.swift */,
+				6771123B2E2EAF5B00B6FEEA /* PassService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6771123C2E2EAF5B00B6FEEA /* WalletManager.swift in Sources */,
+				6771123C2E2EAF5B00B6FEEA /* PassService.swift in Sources */,
 				677112362E2E99B300B6FEEA /* PolicyViewModel.swift in Sources */,
 				B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */,
 				6718A7B02E27F1570012D1FA /* LoginViewModel.swift in Sources */,
