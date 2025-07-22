@@ -10,7 +10,7 @@ import PassKit
 
 struct PolicyCardView: View {
     
-    @State private var showWalletSheet = false
+    @State private var isAddedToWallet = false
     let policy: Policy
     
     var body: some View {
@@ -64,7 +64,12 @@ struct PolicyCardView: View {
             HStack {
                 Button(action: {
                     print("Add to apple wallet button clicked..")
-                    WalletManager.shared.presentWalletPass()
+                    let parameters: [String: Any] = [
+                        "policyNumber": "POL123456",
+                        "policyName": "John Doe",
+                        "expiry": "2026-12-31"
+                    ]
+                    WalletManager.shared.presentWalletPass(from: "https://9c26f7442585.ngrok-free.app/wallet-service/create-apple-pass", with: parameters)
                 }, label: {
                     HStack(spacing: 10) {
                         Image("applewallet", bundle: nil)
