@@ -63,13 +63,14 @@ struct PolicyCardView: View {
             // MARK: Add to Apple Wallet Button
             HStack {
                 Button(action: {
-                    print("Add to apple wallet button clicked..")
                     let parameters: [String: Any] = [
-                        "policyNumber": "POL123456",
-                        "policyName": "John Doe",
-                        "expiry": "2026-12-31"
+                        "policyNumber": policy.policyNumber,
+                        "policyName": policy.name,
+                        "expiry": policy.coveredUntil
                     ]
-                    WalletManager.shared.presentWalletPass(from: "https://9c26f7442585.ngrok-free.app/wallet-service/create-apple-pass", with: parameters)
+                    PassService.shared.presentWalletPass(
+                        from: "https://b0ca12ae326d.ngrok-free.app/wallet-service/create-apple-pass",
+                        with: parameters)
                 }, label: {
                     HStack(spacing: 10) {
                         Image("applewallet", bundle: nil)
