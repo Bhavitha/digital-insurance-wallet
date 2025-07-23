@@ -9,10 +9,20 @@ import Foundation
 
 struct Policy: Identifiable, Decodable {
     let id: String
-    let name: String
-    let insurarLogo: String
-    let policytype: String
+    let policyName: String
+    let insuranceType: String
     let provider: String
     let policyNumber: String
     let coveredUntil: String
+    let logoUrl: String
+
+    private enum CodingKeys: String, CodingKey {
+        case id = "policyId"
+        case policyName, insuranceType, provider, policyNumber, coveredUntil, logoUrl
+    }
+}
+
+struct PolicyResponse: Decodable {
+    let status: String
+    let data: [Policy]
 }

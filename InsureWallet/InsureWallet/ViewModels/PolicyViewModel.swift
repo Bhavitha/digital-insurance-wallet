@@ -15,8 +15,9 @@ class PolicyViewModel: ObservableObject {
     func loadPolicies() async {
         isLoading = true
         do {
-            let fetchedPolicies = try await PolicyService.shared.fetchPolicies()
-            self.policies = fetchedPolicies
+            let policyResponse = try await PolicyService.shared.fetchPolicies()
+            self.policies = policyResponse.data
+           
         } catch {
             print("Failed to load policies: \(error)")
         }

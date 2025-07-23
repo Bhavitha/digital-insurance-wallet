@@ -10,14 +10,14 @@ import PassKit
 
 struct PolicyCardView: View {
     
-    @State private var isAddedToWallet = false
+    @State private var isPassAdded = false
     let policy: Policy
     
     var body: some View {
         VStack(spacing: 6) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(policy.name)
+                    Text(policy.policyName)
                         .font(.headline)
                         .foregroundColor(.primary)
                     Text(policy.provider)
@@ -28,7 +28,7 @@ struct PolicyCardView: View {
                 
                 Spacer()
                 
-                Image(systemName: policy.insurarLogo)
+                Image(systemName: policy.logoUrl)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
@@ -65,7 +65,7 @@ struct PolicyCardView: View {
                 Button(action: {
                     let parameters: [String: Any] = [
                         "policyNumber": policy.policyNumber,
-                        "policyName": policy.name,
+                        "policyName": policy.policyName,
                         "expiry": policy.coveredUntil
                     ]
                     PassService.shared.presentWalletPass(

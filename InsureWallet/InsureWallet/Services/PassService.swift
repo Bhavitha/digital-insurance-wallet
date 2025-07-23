@@ -16,7 +16,7 @@ class PassService {
     }
 
     // load pass from bundle
-  /*  func loadPass() -> PKPass? {
+    func loadPass() -> PKPass? {
         guard let url = Bundle.main.url(forResource: "pass", withExtension: "pkpass") else {
             print("❌ pass.pkpass file not found in bundle")
             return nil
@@ -30,7 +30,7 @@ class PassService {
             print("❌ Failed to load PKPass: \(error)")
             return nil
         }
-    }*/
+    }
     
     //load pass from server
     func requestPass(from urlString: String, with parameters: [String: Any], completion: @escaping (PKPass?) -> Void) {
@@ -86,7 +86,7 @@ class PassService {
            return request
        }
 
-   /* func presentWalletPass() {
+    func presentWalletPass() {
         guard let pass = loadPass(),
               let addVC = PKAddPassesViewController(pass: pass) else {
             print("❌ Wallet VC not available")
@@ -100,7 +100,7 @@ class PassService {
                 rootVC.present(addVC, animated: true)
             }
         }
-    }*/
+    }
     
     func presentWalletPass(from urlString: String, with parameters: [String: Any]) {
            requestPass(from: urlString, with: parameters) { pass in

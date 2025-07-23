@@ -42,12 +42,13 @@ struct PolicyDetailsView: View {
 struct PolicyDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         let policy = Policy(id: "1",
-                            name: "Scottish Widows",
-                            insurarLogo: "apple.image.playground.fill",
-                            policytype: "Property Insurance",
+                            policyName: "Scottish Widows",
+                            insuranceType: "Property Insurance",
                             provider: "Aviva",
                             policyNumber: "PN123456",
-                            coveredUntil: "25 July 2025")
+                            coveredUntil: "25 July 2025",
+                            logoUrl: "apple.image.playground.fill")
+
         PolicyDetailsView(policy: policy)
     }
 }
