@@ -8,7 +8,7 @@
 import Foundation
 import PassKit
 
-class PassService {
+class PassService: NSObject {
     static let shared = PassService()
 
     func canAddPasses() -> Bool {
@@ -16,21 +16,31 @@ class PassService {
     }
 
     // load pass from bundle
-  /*  func loadPass() -> PKPass? {
-        guard let url = Bundle.main.url(forResource: "pass", withExtension: "pkpass") else {
+    func loadPass(cardNo: String) -> PKPass? {
+        var passName: String?
+        
+        if cardNo == "1" {
+            passName = "pass"
+        } else if cardNo == "2" {
+            passName = "Aviva"
+        } else if cardNo == "3" {
+            passName = "Lic"
+        }
+        
+        guard let url = Bundle.main.url(forResource: passName, withExtension: "pkpass") else {
             print("❌ pass.pkpass file not found in bundle")
             return nil
         }
 
         do {
-            let data = try Data(contentsOf: url)
-            let pass = try PKPass(data: data)
+            let passData = try Data(contentsOf: url)
+            let pass = try PKPass(data: passData)
             return pass
         } catch {
             print("❌ Failed to load PKPass: \(error)")
             return nil
         }
-    }*/
+    }
     
     //load pass from server
     func requestPass(from urlString: String, with parameters: [String: Any], completion: @escaping (PKPass?) -> Void) {
@@ -86,8 +96,8 @@ class PassService {
            return request
        }
 
-   /* func presentWalletPass() {
-        guard let pass = loadPass(),
+    func presentWalletPass(cardNo: String) {
+        guard let pass = loadPass(cardNo: cardNo),
               let addVC = PKAddPassesViewController(pass: pass) else {
             print("❌ Wallet VC not available")
             return
@@ -100,23 +110,24 @@ class PassService {
                 rootVC.present(addVC, animated: true)
             }
         }
-    }*/
+    }
     
-    func presentWalletPass(from urlString: String, with parameters: [String: Any]) {
-           requestPass(from: urlString, with: parameters) { pass in
-               guard let pass = pass,
-                     let addVC = PKAddPassesViewController(pass: pass) else {
-                   print("❌ Could not present Wallet VC")
-                   return
-               }
-
-               DispatchQueue.main.async {
-                   if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                      let window = scene.windows.first,
-                      let rootVC = window.rootViewController {
-                       rootVC.present(addVC, animated: true)
-                   }
-               }
-           }
-       }
+//    func presentWalletPass(with parameters: [String: Any]) {
+//        let urlString: String = "https://c2cab07c5314.ngrok-free.app/wallet-service/create-apple-pass"
+//           requestPass(from: urlString, with: parameters) { pass in
+//               guard let pass = pass,
+//                     let addVC = PKAddPassesViewController(pass: pass) else {
+//                   print("❌ Could not present Wallet VC")
+//                   return
+//               }
+//
+//               DispatchQueue.main.async {
+//                   if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+//                      let window = scene.windows.first,
+//                      let rootVC = window.rootViewController {
+//                       rootVC.present(addVC, animated: true)
+//                   }
+//               }
+//           }
+//       }
 }
