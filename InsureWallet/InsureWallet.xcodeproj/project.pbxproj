@@ -32,6 +32,8 @@
 		67E865DC2E2B135C0071AD9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DB2E2B135C0071AD9D /* HomeView.swift */; };
 		67E865DE2E2C7CBA0071AD9D /* PolicyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */; };
 		67E865E02E2C81380071AD9D /* InsurancePolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */; };
+		B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */; };
+		B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA3012E314A6100E046C5 /* Lic.pkpass */; };
 		B6FF596C2E2EC3E4000B9E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */; };
 		B6FF59862E2ED326000B9E58 /* PolicyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */; };
 		B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */; };
@@ -79,6 +81,9 @@
 		67E865DB2E2B135C0071AD9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCardView.swift; sourceTree = "<group>"; };
 		67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurancePolicyView.swift; sourceTree = "<group>"; };
+		B64FBD052E3124FB00C87633 /* InsureWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsureWallet.entitlements; sourceTree = "<group>"; };
+		B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aviva.pkpass; sourceTree = "<group>"; };
+		B6EEA3012E314A6100E046C5 /* Lic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lic.pkpass; sourceTree = "<group>"; };
 		B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsView.swift; sourceTree = "<group>"; };
 		B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsHeaderView.swift; sourceTree = "<group>"; };
@@ -160,6 +165,7 @@
 		67DB02922E26DA670024B1EF /* InsureWallet */ = {
 			isa = PBXGroup;
 			children = (
+				B64FBD052E3124FB00C87633 /* InsureWallet.entitlements */,
 				67E865DA2E2B01C60071AD9D /* Services */,
 				67E865D72E2B01A20071AD9D /* Models */,
 				6718A7AC2E27F1060012D1FA /* ViewModels */,
@@ -219,7 +225,9 @@
 		B6FF598B2E2EDA25000B9E58 /* PassFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B6EEA3012E314A6100E046C5 /* Lic.pkpass */,
 				6771123A2E2EADF700B6FEEA /* pass.pkpass */,
+				B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */,
 			);
 			path = PassFiles;
 			sourceTree = "<group>";
@@ -338,6 +346,8 @@
 				67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */,
 				B6FF596C2E2EC3E4000B9E58 /* GoogleService-Info.plist in Resources */,
 				67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */,
+				B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */,
+				B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */,
 				676B70672E2FACF700A5FC54 /* LaunchScreen.storyboard in Resources */,
 				6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */,
 			);

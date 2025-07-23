@@ -68,17 +68,16 @@ struct PolicyCardView: View {
                         "policyName": policy.name,
                         "expiry": policy.coveredUntil
                     ]
-                    PassService.shared.presentWalletPass(
-                        from: "https://b0ca12ae326d.ngrok-free.app/wallet-service/create-apple-pass",
-                        with: parameters)
+                    PassService.shared.presentWalletPass(cardNo: policy.id)
+//                    PassService.shared.presentWalletPass(with: parameters)
                 }, label: {
                     HStack(spacing: 10) {
                         Image("applewallet", bundle: nil)
                         VStack(alignment: .leading) {
                             Text("Add to")
-                                .font(.subheadline)
+                                .font(.footnote)
                             Text("Apple Wallet")
-                                .font(.subheadline)
+                                .font(.footnote)
                         }
                     }
                     .padding(.horizontal, 20)
