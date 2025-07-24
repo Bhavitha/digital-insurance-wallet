@@ -112,22 +112,22 @@ class PassService: NSObject {
         }
     }
     
-//    func presentWalletPass(with parameters: [String: Any]) {
-//        let urlString: String = "https://c2cab07c5314.ngrok-free.app/wallet-service/create-apple-pass"
-//           requestPass(from: urlString, with: parameters) { pass in
-//               guard let pass = pass,
-//                     let addVC = PKAddPassesViewController(pass: pass) else {
-//                   print("❌ Could not present Wallet VC")
-//                   return
-//               }
-//
-//               DispatchQueue.main.async {
-//                   if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-//                      let window = scene.windows.first,
-//                      let rootVC = window.rootViewController {
-//                       rootVC.present(addVC, animated: true)
-//                   }
-//               }
-//           }
-//       }
+    func presentWalletPass(with parameters: [String: Any]) {
+        let urlString: String = "https://c2cab07c5314.ngrok-free.app/wallet-service/create-apple-pass"
+           requestPass(from: urlString, with: parameters) { pass in
+               guard let pass = pass,
+                     let addVC = PKAddPassesViewController(pass: pass) else {
+                   print("❌ Could not present Wallet VC")
+                   return
+               }
+
+               DispatchQueue.main.async {
+                   if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                      let window = scene.windows.first,
+                      let rootVC = window.rootViewController {
+                       rootVC.present(addVC, animated: true)
+                   }
+               }
+           }
+       }
 }
