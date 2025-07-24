@@ -67,9 +67,13 @@ struct PolicyCardView: View {
                     let parameters: [String: Any] = [
                         "policyNumber": policy.policyNumber,
                         "policyName": policy.policyName,
-                        "expiry": policy.coveredUntil
+                        "expiry": policy.coveredUntil,
+                        "userId": "reboot@gmail.com"
                     ]
-                    PassService.shared.presentWalletPass(cardNo: policy.id)
+//                    PassService.shared.presentWalletPass(cardNo: policy.id)
+                   PassService.shared.presentWalletPass(with: parameters)
+                    
+                    // Simulate expiry notification after 10 seconds
                     NotificationService.shared.schedulePolicyExpiryNotification(policyName: policy.policyName, secondsFromNow: 10)
                 }, label: {
                     HStack(spacing: 10) {
