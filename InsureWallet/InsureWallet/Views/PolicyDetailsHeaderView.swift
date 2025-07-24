@@ -22,10 +22,10 @@ struct PolicyDetailsHeaderView: View {
     private func headerViewPolicyNameAndLogo() -> some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(policy.name)
+                Text(policy.policyName)
                     .font(.title)
                     .bold()
-                Text(policy.policytype)
+                Text(policy.provider)
                     .font(.subheadline)
                 Text("Provided by \(policy.provider)")
                     .font(.subheadline)
@@ -33,7 +33,7 @@ struct PolicyDetailsHeaderView: View {
             .foregroundColor(.black)
             Spacer()
             VStack(alignment: .trailing) {
-                Image(systemName: policy.insurarLogo)
+                Image(policy.logoUrl)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
@@ -69,12 +69,12 @@ struct PolicyDetailsHeaderView: View {
 struct PolicyDetailsHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         let policy = Policy(id: "1",
-                            name: "Scottish Widows",
-                            insurarLogo: "apple.image.playground.fill",
-                            policytype: "Property Insurance",
+                            policyName: "Scottish Widows",
+                            insuranceType: "Property Insurance",
                             provider: "Aviva",
                             policyNumber: "PN123456",
-                            coveredUntil: "25 July 2025")
+                            coveredUntil: "01-jun-2025",
+                            logoUrl: "")
         PolicyDetailsView(policy: policy)
     }
 }

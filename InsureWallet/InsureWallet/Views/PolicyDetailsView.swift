@@ -39,15 +39,15 @@ struct PolicyDetailsView: View {
     }
 }
 
-struct PolicyDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        let policy = Policy(id: "1",
-                            name: "Scottish Widows",
-                            insurarLogo: "apple.image.playground.fill",
-                            policytype: "Property Insurance",
-                            provider: "Aviva",
-                            policyNumber: "PN123456",
-                            coveredUntil: "25 July 2025")
-        PolicyDetailsView(policy: policy)
-    }
-}
+//struct PolicyDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        let policy = Policy(id: "1",
+//                            policyName: "Scottish Widows",
+//                            insurarLogo: "apple.image.playground.fill",
+//                            policytype: "Property Insurance",
+//                            provider: "Aviva",
+//                            policyNumber: "PN123456",
+//                            coveredUntil: "25 July 2025")
+//        PolicyDetailsView(policy: policy)
+//    }
+//}

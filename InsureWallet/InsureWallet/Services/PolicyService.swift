@@ -10,12 +10,12 @@ import Foundation
 class PolicyService {
     static let shared = PolicyService()
 
-    func fetchPolicies() async throws -> [Policy] {
-        guard let url = URL(string: "https://updatedomain/policies") else {
+    func fetchPolicies() async throws -> PolicyResponse {
+        guard let url = URL(string: "https://b476095c2475.ngrok-free.app/policy-service/policy-details") else {
             throw URLError(.badURL)
         }
 
         let (data, _) = try await URLSession.shared.data(from: url)
-        return try JSONDecoder().decode([Policy].self, from: data)
+        return try JSONDecoder().decode(PolicyResponse.self, from: data)
     }
 }
