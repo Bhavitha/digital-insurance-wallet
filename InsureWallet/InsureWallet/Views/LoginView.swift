@@ -71,7 +71,7 @@ struct LoginView: View {
                 
                 // MARK: Login Button
                 loginButton()
-                NavigationLink(destination: HomeView()) {
+                NavigationLink(destination: EmptyView()) {
                     Text("Register")
                         .foregroundColor(.red)
                 }

@@ -17,7 +17,7 @@ struct Policy: Identifiable, Decodable {
     let logoUrl: String
 
     private enum CodingKeys: String, CodingKey {
-        case id = "policyId"
+        case id
         case policyName, insuranceType, provider, policyNumber, coveredUntil, logoUrl
     }
 }

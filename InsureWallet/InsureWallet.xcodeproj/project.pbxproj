@@ -24,6 +24,12 @@
 		677112382E2E99E600B6FEEA /* PolicyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112372E2E99E600B6FEEA /* PolicyListView.swift */; };
 		6771123C2E2EAF5B00B6FEEA /* PassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6771123B2E2EAF5B00B6FEEA /* PassService.swift */; };
 		6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6771123A2E2EADF700B6FEEA /* pass.pkpass */; };
+		679AAF542E322E53009424A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 679AAF532E322E53009424A7 /* FirebaseAuth */; };
+		679AAF562E323341009424A7 /* PolicyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AAF552E323341009424A7 /* PolicyViewModelTests.swift */; };
+		679AAF582E323625009424A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 679AAF572E323625009424A7 /* FirebaseAuth */; };
+		679AAF5C2E3237C8009424A7 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AAF5B2E3237C8009424A7 /* MockAuthService.swift */; };
+		679AAF5F2E323FDD009424A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
+		679AAF602E323FDE009424A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
 		67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02932E26DA670024B1EF /* InsureWalletApp.swift */; };
 		67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB02972E26DA680024B1EF /* Assets.xcassets */; };
 		67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */; };
@@ -31,9 +37,7 @@
 		67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */; };
 		67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */; };
 		67E865D92E2B01B50071AD9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
-		67E865DC2E2B135C0071AD9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DB2E2B135C0071AD9D /* HomeView.swift */; };
 		67E865DE2E2C7CBA0071AD9D /* PolicyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */; };
-		67E865E02E2C81380071AD9D /* InsurancePolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */; };
 		B6AA5F7E2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
 		B6AA5F7F2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
 		B6AA5F802E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
@@ -73,6 +77,8 @@
 		677112372E2E99E600B6FEEA /* PolicyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyListView.swift; sourceTree = "<group>"; };
 		6771123A2E2EADF700B6FEEA /* pass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass.pkpass; sourceTree = "<group>"; };
 		6771123B2E2EAF5B00B6FEEA /* PassService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassService.swift; sourceTree = "<group>"; };
+		679AAF552E323341009424A7 /* PolicyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModelTests.swift; sourceTree = "<group>"; };
+		679AAF5B2E3237C8009424A7 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		67DB02902E26DA670024B1EF /* InsureWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsureWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DB02932E26DA670024B1EF /* InsureWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletApp.swift; sourceTree = "<group>"; };
 		67DB02972E26DA680024B1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,9 +89,7 @@
 		67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITests.swift; sourceTree = "<group>"; };
 		67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67E865D82E2B01B50071AD9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		67E865DB2E2B135C0071AD9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCardView.swift; sourceTree = "<group>"; };
-		67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurancePolicyView.swift; sourceTree = "<group>"; };
 		B6AA5F7C2E31FF05005AE013 /* InsureWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsureWallet.entitlements; sourceTree = "<group>"; };
 		B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aviva.pkpass; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679AAF542E322E53009424A7 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679AAF582E323625009424A7 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,9 +134,7 @@
 				B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */,
 				B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */,
 				6718A7AA2E27F0930012D1FA /* LoginView.swift */,
-				67E865DB2E2B135C0071AD9D /* HomeView.swift */,
 				67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */,
-				67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */,
 				677112372E2E99E600B6FEEA /* PolicyListView.swift */,
 			);
 			path = Views;
@@ -204,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */,
+				679AAF552E323341009424A7 /* PolicyViewModelTests.swift */,
+				679AAF5B2E3237C8009424A7 /* MockAuthService.swift */,
 			);
 			path = InsureWalletTests;
 			sourceTree = "<group>";
@@ -286,6 +292,9 @@
 				67DB02A22E26DA680024B1EF /* PBXTargetDependency */,
 			);
 			name = InsureWalletTests;
+			packageProductDependencies = (
+				679AAF532E322E53009424A7 /* FirebaseAuth */,
+			);
 			productName = InsureWalletTests;
 			productReference = 67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -304,6 +313,9 @@
 				67DB02AC2E26DA680024B1EF /* PBXTargetDependency */,
 			);
 			name = InsureWalletUITests;
+			packageProductDependencies = (
+				679AAF572E323625009424A7 /* FirebaseAuth */,
+			);
 			productName = InsureWalletUITests;
 			productReference = 67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -397,7 +409,6 @@
 				B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */,
 				6718A7B02E27F1570012D1FA /* LoginViewModel.swift in Sources */,
 				B6FF59862E2ED326000B9E58 /* PolicyDetailsView.swift in Sources */,
-				67E865DC2E2B135C0071AD9D /* HomeView.swift in Sources */,
 				6718A7AB2E27F0930012D1FA /* LoginView.swift in Sources */,
 				677112322E2E994A00B6FEEA /* Policy.swift in Sources */,
 				67E865D92E2B01B50071AD9D /* User.swift in Sources */,
@@ -408,7 +419,6 @@
 				67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */,
 				677112342E2E997F00B6FEEA /* PolicyService.swift in Sources */,
 				677112382E2E99E600B6FEEA /* PolicyListView.swift in Sources */,
-				67E865E02E2C81380071AD9D /* InsurancePolicyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679AAF5C2E3237C8009424A7 /* MockAuthService.swift in Sources */,
+				679AAF5F2E323FDD009424A7 /* User.swift in Sources */,
+				679AAF562E323341009424A7 /* PolicyViewModelTests.swift in Sources */,
 				67DB02A52E26DA680024B1EF /* InsureWalletTests.swift in Sources */,
 				6718A7BA2E2AF85D0012D1FA /* AuthService.swift in Sources */,
 			);
@@ -425,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679AAF602E323FDE009424A7 /* User.swift in Sources */,
 				6718A7BB2E2AF85D0012D1FA /* AuthService.swift in Sources */,
 				67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */,
 				67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */,
@@ -692,17 +706,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,17 +726,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -799,6 +809,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		679AAF532E322E53009424A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		679AAF572E323625009424A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

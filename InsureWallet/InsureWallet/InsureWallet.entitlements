@@ -4,6 +4,7 @@
 <dict>
 	<key>com.apple.developer.pass-type-identifiers</key>
 	<array>
+		<string>$(TeamIdentifierPrefix)pass.com.digitalwalletapp</string>
 		<string>$(TeamIdentifierPrefix)pass.hackathon.digitalfrontiers</string>
 	</array>
 </dict>

@@ -8,10 +8,10 @@
 import Foundation
 
 class PolicyService {
-    static let shared = PolicyService()
+    static var shared = PolicyService()
 
     func fetchPolicies() async throws -> PolicyResponse {
-        guard let url = URL(string: "https://b476095c2475.ngrok-free.app/policy-service/policy-details") else {
+        guard let url = URL(string: "https://108053cc65ef.ngrok-free.app/policy-service/policy-details") else {
             throw URLError(.badURL)
         }
 
