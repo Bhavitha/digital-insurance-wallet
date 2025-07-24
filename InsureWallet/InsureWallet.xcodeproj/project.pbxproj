@@ -34,9 +34,11 @@
 		67E865DC2E2B135C0071AD9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DB2E2B135C0071AD9D /* HomeView.swift */; };
 		67E865DE2E2C7CBA0071AD9D /* PolicyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */; };
 		67E865E02E2C81380071AD9D /* InsurancePolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */; };
+		B6AA5F7E2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
+		B6AA5F7F2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
+		B6AA5F802E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
 		B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */; };
 		B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA3012E314A6100E046C5 /* Lic.pkpass */; };
-		B6FF596C2E2EC3E4000B9E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */; };
 		B6FF59862E2ED326000B9E58 /* PolicyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */; };
 		B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */; };
 /* End PBXBuildFile section */
@@ -84,9 +86,10 @@
 		67E865DB2E2B135C0071AD9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCardView.swift; sourceTree = "<group>"; };
 		67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurancePolicyView.swift; sourceTree = "<group>"; };
+		B6AA5F7C2E31FF05005AE013 /* InsureWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsureWallet.entitlements; sourceTree = "<group>"; };
+		B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aviva.pkpass; sourceTree = "<group>"; };
 		B6EEA3012E314A6100E046C5 /* Lic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lic.pkpass; sourceTree = "<group>"; };
-		B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsView.swift; sourceTree = "<group>"; };
 		B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				676B70662E2FACF700A5FC54 /* LaunchScreen.storyboard */,
-				B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */,
+				B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */,
 				B6FF598B2E2EDA25000B9E58 /* PassFiles */,
 				67DB02922E26DA670024B1EF /* InsureWallet */,
 				67DB02A32E26DA680024B1EF /* InsureWalletTests */,
@@ -176,6 +179,7 @@
 		67DB02922E26DA670024B1EF /* InsureWallet */ = {
 			isa = PBXGroup;
 			children = (
+				B6AA5F7C2E31FF05005AE013 /* InsureWallet.entitlements */,
 				67E865DA2E2B01C60071AD9D /* Services */,
 				67E865D72E2B01A20071AD9D /* Models */,
 				6718A7AC2E27F1060012D1FA /* ViewModels */,
@@ -356,12 +360,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */,
-				B6FF596C2E2EC3E4000B9E58 /* GoogleService-Info.plist in Resources */,
 				67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */,
 				B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */,
 				B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */,
 				676B70672E2FACF700A5FC54 /* LaunchScreen.storyboard in Resources */,
 				6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */,
+				B6AA5F7E2E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AA5F7F2E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AA5F802E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,11 +571,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InsureWallet/InsureWallet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
-				DEVELOPMENT_TEAM = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -584,9 +593,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,11 +608,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InsureWallet/InsureWallet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
-				DEVELOPMENT_TEAM = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -617,9 +630,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,14 +645,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -651,14 +669,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W7XCV2Z9X2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -670,12 +692,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -687,12 +714,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bhavitha.InsureWalletUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
