@@ -62,7 +62,7 @@ struct PolicyCardView: View {
             
             // MARK: Add to Apple Wallet Button
             // Wallet Button
-                      Button(action: {
+                   /*   Button(action: {
                           let parameters: [String: Any] = [
                               "policyNumber": policy.policyNumber,
                               "policyName": policy.policyName,
@@ -79,9 +79,9 @@ struct PolicyCardView: View {
                           AddToWalletButton(isPassAdded: $isPassAdded)
                               .frame(height: 44)
                               .frame(maxWidth: .infinity)
-                      }
+                      }*/
                       
-          /*  HStack {
+            HStack {
                 Button(action: {
                     let parameters: [String: Any] = [
                         "policyNumber": policy.policyNumber,
@@ -89,7 +89,13 @@ struct PolicyCardView: View {
                         "expiry": policy.coveredUntil
                     ]
                     PassService.shared.presentWalletPass(cardNo: policy.id)
-//                    PassService.shared.presentWalletPass(with: parameters)
+/*                   PassService.shared.presentWalletPass(with: parameters)
+                    PassService.shared.presentWalletPass(
+                        from: "https://b0ca12ae326d.ngrok-free.app/wallet-service/create-apple-pass",
+                        with: parameters)*/
+                    
+                    // Simulate expiry notification after 10 seconds
+                    NotificationService.shared.schedulePolicyExpiryNotification(policyName: policy.policyName, secondsFromNow: 10)
                 }, label: {
                     HStack(spacing: 10) {
                         Image("applewallet", bundle: nil)
@@ -110,7 +116,7 @@ struct PolicyCardView: View {
                                                                    bottomTrailing: 10,
                                                                    topTrailing: 10)))
                 .padding(.top, 10)
-            } */
+            }
         }
         .padding()
         .background(Color(.systemBackground))
@@ -119,7 +125,7 @@ struct PolicyCardView: View {
     }
 }
 
-struct AddToWalletButton: UIViewRepresentable {
+/*struct AddToWalletButton: UIViewRepresentable {
     @Binding var isPassAdded: Bool
 
     func makeUIView(context: Context) -> PKAddPassButton {
@@ -161,4 +167,4 @@ struct AddToWalletButton: UIViewRepresentable {
             }
         }
     }
-}
+}*/
