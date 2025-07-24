@@ -84,7 +84,6 @@
 		67E865DB2E2B135C0071AD9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCardView.swift; sourceTree = "<group>"; };
 		67E865DF2E2C81380071AD9D /* InsurancePolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurancePolicyView.swift; sourceTree = "<group>"; };
-		B64FBD052E3124FB00C87633 /* InsureWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsureWallet.entitlements; sourceTree = "<group>"; };
 		B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aviva.pkpass; sourceTree = "<group>"; };
 		B6EEA3012E314A6100E046C5 /* Lic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lic.pkpass; sourceTree = "<group>"; };
 		B6FF596B2E2EC3E4000B9E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -177,7 +176,6 @@
 		67DB02922E26DA670024B1EF /* InsureWallet */ = {
 			isa = PBXGroup;
 			children = (
-				B64FBD052E3124FB00C87633 /* InsureWallet.entitlements */,
 				67E865DA2E2B01C60071AD9D /* Services */,
 				67E865D72E2B01A20071AD9D /* Models */,
 				6718A7AC2E27F1060012D1FA /* ViewModels */,
