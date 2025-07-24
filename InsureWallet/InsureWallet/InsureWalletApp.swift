@@ -13,7 +13,7 @@ struct InsureWalletApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-               PolicyListView()
+                LoginView()
             }
         }
     }
