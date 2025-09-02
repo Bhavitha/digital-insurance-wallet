@@ -11,7 +11,7 @@ class PolicyService {
     static var shared = PolicyService()
 
     func fetchPolicies() async throws -> PolicyResponse {
-        guard let url = URL(string: "https://108053cc65ef.ngrok-free.app/policy-service/policy-details") else {
+        guard let url = URL(string: "https://c0946159831f.ngrok-free.app/policy-service/policy-details") else {
             throw URLError(.badURL)
         }
 

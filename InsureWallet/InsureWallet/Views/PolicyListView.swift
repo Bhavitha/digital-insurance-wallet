@@ -32,9 +32,9 @@ struct PolicyListView: View {
     
     private var policyCards: some View {
            LazyVStack(spacing: 16) {
-               ForEach(viewModel.policies) { policy in
+               ForEach($viewModel.policies) { $policy in
                    NavigationLink(destination: PolicyDetailsView(policy: policy)) {
-                       PolicyCardView(policy: policy)
+                       PolicyCardView(policy: $policy)
                            .shadow(radius: 5)
                    }
                }

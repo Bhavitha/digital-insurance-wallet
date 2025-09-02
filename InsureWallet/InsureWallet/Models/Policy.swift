@@ -15,6 +15,7 @@ struct Policy: Identifiable, Decodable {
     let policyNumber: String
     let coveredUntil: String
     let logoUrl: String
+    var isPassAdded: Bool = false 
 
     private enum CodingKeys: String, CodingKey {
         case id

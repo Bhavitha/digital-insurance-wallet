@@ -10,8 +10,8 @@ import PassKit
 
 struct PolicyCardView: View {
     
-    @State private var isPassAdded = false
-    let policy: Policy
+    // @State private var isPassAdded = false
+    @Binding var policy: Policy
     
     var body: some View {
         VStack(spacing: 6) {
@@ -70,25 +70,36 @@ struct PolicyCardView: View {
                         "expiry": policy.coveredUntil,
                         "userId": "reboot@gmail.com"
                     ]
-//                    PassService.shared.presentWalletPass(cardNo: policy.id)
+                 //   PassService.shared.addPassFromBundle()
+                  
                    PassService.shared.presentWalletPass(with: parameters)
                     
                     // Simulate expiry notification after 10 seconds
                     NotificationService.shared.schedulePolicyExpiryNotification(policyName: policy.policyName, secondsFromNow: 10)
+                    policy.isPassAdded = true
                 }, label: {
                     HStack(spacing: 10) {
-                        Image("applewallet", bundle: nil)
-                        VStack(alignment: .leading) {
-                            Text("Add to")
-                                .font(.footnote)
-                            Text("Apple Wallet")
-                                .font(.footnote)
+                        if !policy.isPassAdded {
+                            Image("applewallet", bundle: nil)
+                            Text("Add to Apple wallet")
+//                            VStack(alignment: .leading) {
+//                                Text("Add to")
+//                                    .font(.footnote)
+//                                Text("Apple Wallet")
+//                                    .font(.footnote)
+//                            }
+                        } else {
+                            Image("applewallet", bundle: nil)
+                            Text("Add to Apple wallet")
+                            
                         }
                     }
+                   
                     .padding(.horizontal, 20)
                     .padding(.vertical, 8)
                     .foregroundColor(.white)
                 })
+                .disabled(policy.isPassAdded)
                 .background(Color.black)
                 .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 10,
                                                                    bottomLeading: 10,

@@ -71,7 +71,7 @@ class PassService: NSObject {
        }
 
     func presentWalletPass(with parameters: [String: Any]) {
-        let urlString: String = "https://3d372ef31224.ngrok-free.app/wallet-service/create-apple-pass"
+        let urlString: String = "https://28d235f0d08f.ngrok-free.app/wallet-service/create-apple-pass"
            requestPass(from: urlString, with: parameters) { pass in
                guard let pass = pass,
                      let addVC = PKAddPassesViewController(pass: pass) else {
@@ -89,4 +89,31 @@ class PassService: NSObject {
                }
            }
        }
+    
+     func addPassFromBundle() {
+        // Locate pkpass file in bundle
+        guard let passURL = Bundle.main.url(forResource: "pass", withExtension: "pkpass") else {
+         //   showError(message: "Pass file not found in bundle.")
+            return
+        }
+
+        do {
+            // Load pass data
+            let passData = try Data(contentsOf: passURL)
+            
+            // Create PKPass object
+            let pass = try PKPass(data: passData)
+            
+            // Present add pass view controller
+            let passVC = PKAddPassesViewController(pass: pass)
+            if let passVC = passVC {
+                UIApplication.shared.windows.first?.rootViewController?.present(passVC, animated: true)
+            } else {
+            //    showError(message: "Unable to create Add Pass View Controller.")
+            }
+        } catch {
+//            showError(message: "Failed to load pass: \(error.localizedDescription)")
+        }
+    }
+
 }
